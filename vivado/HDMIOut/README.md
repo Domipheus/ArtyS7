@@ -24,7 +24,9 @@ Output is via the 4 differential pairs of 'High Speed' PMOD port JA. You can use
 I have managed up to 1080p60 and 1440p30 with slightly out of spec timings on an HDMI monitor, using a 1m cable.
 Tested configurations below:
 
-#1080p60 
+
+# 1080p60
+```
 150MHz pixel clock
 vga_gen generic values:
 hRez       : natural := 1920;	
@@ -37,8 +39,10 @@ vStartSync : natural := 1080+4;
 vEndSync   : natural := 1080+4+5;
 vMaxCount  : natural := 1080+4+5+36;
 vsyncActive : std_logic := '1'
+```
 
-#1440p30
+# 1440p30
+```
 150MHz pixel clock
 vga_gen generic values:
 hRez       : natural := 2560 ;    
@@ -46,14 +50,15 @@ hStartSync : natural := 2680 ;
 hEndSync   : natural := 2944 ;
 hMaxCount  : natural := 3328 ;
 hsyncActive : std_logic := '0';
-
 vRez       : natural := 1440;
 vStartSync : natural := 1443 ;
 vEndSync   : natural := 1448 ;
 vMaxCount  : natural := 1468;
 vsyncActive : std_logic := '1'
+```
 
-#800x480x60hz (many 5" HDMI Raspberry Pi screens)
+# 800x480x60hz (many 5" HDMI Raspberry Pi screens)
+```
 33.33MHz pixel clock
 vga_gen generic values:
 hRez       : natural := 800;    
@@ -66,8 +71,10 @@ vStartSync : natural := 480+8;
 vEndSync   : natural := 480+8+2;
 vMaxCount  : natural := 480+8+2+35;
 vsyncActive : std_logic := '1'
+```
 
-#720p60
+# 720p60
+```
 75MHz pixel clock
 vga_gen generic values:
 hRez       : natural := 1280;    
@@ -80,3 +87,4 @@ vStartSync : natural := 720+3;
 vEndSync   : natural := 720+3+5;
 vMaxCount  : natural := 720+3+5+22;
 vsyncActive : std_logic := '1';
+```
