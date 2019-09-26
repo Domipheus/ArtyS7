@@ -10,8 +10,8 @@ Output is via the 4 differential pairs of 'High Speed' PMOD port JA. You can use
 | --- | --- | --- |
 | 1 | 4 | TMDS1+ |
 | 2 | 6 | TMDS1- |
-| 3 | 9 | TMDS0+ |
-| 4 | 7 | TMDS0- |
+| 3 | 7 | TMDS0+ |
+| 4 | 9 | TMDS0- |
 | 5 | 2,5,8,11,13,17,plug surround | GND of all HDMI connector signals |
 | 6 | x | No Connection |
 | 7 | 1 | TMDS2+ |
